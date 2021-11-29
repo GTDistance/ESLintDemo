@@ -1,0 +1,25 @@
+{
+  "name": "EslintDemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint:create": "eslint --init"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "husky": "^7.0.4"
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit":"yarn lint"
+    }
+  },
+  "dependencies": {
+  }
+}
