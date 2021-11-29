@@ -15,11 +15,6 @@
     "eslint-plugin-promise": "^5.1.1",
     "husky": "^7.0.4"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"yarn lint"
-    }
-  },
   "dependencies": {
   }
 }
